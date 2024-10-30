@@ -3,7 +3,7 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  let [elements, setElement] = useState(['Sample Text 1','Sample Text 2','Sample Text 3']);
+  let [elements, setElement] = useState(['Sample Text 1','Sample Text 2','Sample Text 3.3']);
 
 
   let [newValue , setNewValue] = useState('');
