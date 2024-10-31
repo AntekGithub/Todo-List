@@ -3,8 +3,18 @@ body{
 }
 .App {
   text-align: center;
+  background-color: rgb(110,110,110);
 }
 li{
   background-color: rgb(195,195,195);
   margin-top:5px;
+  border-style:none;
+  border-radius:5px;
+}
+.Inputs{
+  background-color: antiquewhite;
+  width:50%;
+  margin-left:25%;
+  height: 65px;
+  padding-top:15px;
 }

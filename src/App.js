@@ -3,7 +3,7 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  let [elements, setElement] = useState(['Sample Text 1','Sample Text 2','Sample Text 3.3']);
+  let [elements, setElement] = useState(['Sample Text 1','Sample Text 2','Sample Text 3']);
 
 
   let [newValue , setNewValue] = useState('');
@@ -15,7 +15,6 @@ function App() {
   const theGreatFilter = elements.filter((entry2) => 
     entry2.toLowerCase().includes(filterer.toLowerCase())
   )
-
 
   const elementList = theGreatFilter.map((entry) => (
     <li>{entry} <button type="button" onClick={() => eraseEntry(entry)}>trash</button></li>
@@ -47,10 +46,12 @@ function App() {
       <ul>
         {elementList}
       </ul>
-      <input type="text" value={newValue} onChange={inputValue}/>
+      <div class="Inputs">
+      Add Element: <input type="text" value={newValue} onChange={inputValue}/>
       <button type="button" onClick={addValueToList}>Add</button>
       <br></br>
-      <input type="text" value={filterer} onChange={filterValue}/>
+      Filter: <input type="text" value={filterer} onChange={filterValue}/>
+      </div>
     </div>
   );
 }
